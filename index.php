@@ -14,7 +14,13 @@
        $row = mysqli_fetch_array($result, MYSQLI_NUM);
        print_r($row);
 
-
      ?>
+
+     <?php
+     $days = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+     foreach ($days as $key => $value) {
+       echo "<div>".$value."</div>";
+     }
+      ?>
   </body>
 </html>
