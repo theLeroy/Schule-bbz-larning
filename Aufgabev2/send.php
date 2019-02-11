@@ -23,6 +23,10 @@ $nummer = mysqli_real_escape_string($conn, $_POST["nummer"]);
 $sql = "INSERT INTO persons (name, vorname, PLZ, nummer, strasse) VALUES ('". $vorname ."', '". $name ."', '". $PLZ ."', '".$nummer."', '". $strasse. "')";
 if(mysqli_query($conn, $sql)){
     echo "Records inserted successfully.";
+    ?>
+    <h1>es het klappet!</h1>
+
+     <?php
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
 }
@@ -30,4 +34,5 @@ if(mysqli_query($conn, $sql)){
 
 
 mysqli_close($conn);
+
  ?>
