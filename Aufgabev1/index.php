@@ -13,6 +13,7 @@
 
        $row = mysqli_fetch_array($result, MYSQLI_NUM);
        print_r($row);
+       print_r($result);
 
      ?>
 
