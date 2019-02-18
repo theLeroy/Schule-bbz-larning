@@ -13,5 +13,4 @@ if (!$conn) { //Sql Verbindung Test
   die("Connection failed: " . mysqli_connect_error());
 }
 
-
  ?>
