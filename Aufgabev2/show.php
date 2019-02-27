@@ -16,7 +16,7 @@ if (mysqli_num_rows($result) > 0) {
     // output data of each row
     while($row = mysqli_fetch_assoc($result)) {
       echo "<tr>";
-        echo "<td>" . $row["vorname"]. "</td><td>" . $row["name"]. "</td><td>" . $row["PLZ"]. "</td><td>" . $row["strasse"]. "</td><td>" . $row["nummer"]. "</td>";
+        echo "<td>" . htmlspecialchars($row["vorname"]). "</td><td>" . htmlspecialchars($row["name"]). "</td><td>" . htmlspecialchars($row["PLZ"]). "</td><td>" . htmlspecialchars($row["strasse"]). "</td><td>" . htmlspecialchars($row["nummer"]). "</td><td><a href='./del.php?id=".htmlspecialchars($row["id"])."'>🗑</a></td>";
       echo "</tr>";
     }
 } else {
