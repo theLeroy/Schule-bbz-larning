@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+    body {
+      padding: 40px;
+      color: red;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.8em;
+    }
+    form {
+      border: 3px solid red;
+      padding: 20px;
+      width: 60%;
+      font-size: 1.2em;
+    }
+    input[type=text], input[type=number] {
+      border: none;
+      border-bottom: 3px solid red;
+      display: block;
+      width: calc(100% - 20px);
+      padding: 10px;
+      outline: none;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: red;
+    }
+    input[type=text]:focus, input[type=number]:focus {
+      background-color: red;
+      color: white;
+    }
+    input[type=number] {
+      width: 20%;
+    }
+    input[type=submit] {
+      background-color: red;
+      border: 3px solid red;
+      padding: 40px 20px;
+      font-family: 'Roboto Mono', monospace;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      outline: none;
+    }
+    input[type=submit]:hover, input[type=submit]:focus {
+      color: red;
+      background-color: white;
+      cursor: pointer;
+    }
+    ::selection {
+      color: white;
+      background-color: blue;
+    }
+
+  </style>
+</head>
+
+<body>
+  <form action="add_person.php" method="POST">
+    <label>Name</label><br>
+    <input name="name" type="text"><br>
+    <label>Vorname</label><br>
+    <input name="vorname" type="text"><br>
+    <label>Strasse</label><br>
+    <input name="strasse" type="text"><br>
+    <label>Nummer</label><br>
+    <input name="nummer" type="number"><br>
+    <label>PLZ</label><br>
+    <input name="PLZ" type="number"><br>
+    <input type="submit" value="Speichern">
+  </form>
+</body>
+
+</html>
