@@ -12,7 +12,7 @@ Welchen Zweck/Ziel das Projekt hat
 		* wie man das Projekt zum Laufen bringt (Befehle, Installationen, usw)
 		= Man braucht einen PHP-Server. Keine Befehle: einfach das Starten des Server und das zum laufen bringen.
 		* was man weiter beachten sollte
-		= Server muss laufen.
+		= Server muss laufen
 	* Wie die Struktur des Projekts aussieht
 		* Welche Seite ist verantwortlich wofür?
 			- add person: Funktion des Hinzufügen der Personen
