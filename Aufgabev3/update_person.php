@@ -7,7 +7,7 @@ $strasse = $_POST['strasse'];
 $nummer = $_POST['nummer'];
 $plz = $_POST['plz'];
 
-
+//Sql Sting
 $sql = "UPDATE persons
        SET name='$name',
            vorname='$vorname',
@@ -22,14 +22,14 @@ $sql = "UPDATE persons
        $db = dbconnect();
 
 
-       mysqli_query($db, $sql);
+       mysqli_query($db, $sql); //Sql Abfrage
 
        $resultat = mysqli_query($db, $sql);
        if(!$resultat){
          die(mysqli_error($db));
        };
 
-       mysqli_close($db);
+       mysqli_close($db); //trennen der verbingung
 
        header('Location: index.php');
 

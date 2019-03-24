@@ -2,13 +2,13 @@
 
 body {
   padding: 40px;
-  color: red;
+  color: #7fe7cc;
   font-family: 'Roboto Mono', monospace;
   font-size: 0.8em;
 }
 
 form {
-  border: 3px solid red;
+  border: 3px solid #7fe7cc;
   padding: 20px;
   width: 60%;
   font-size: 1.2em;
@@ -16,7 +16,7 @@ form {
 
 input[type=text], input[type=number] {
   border: none;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #7fe7cc;
   display: block;
   width: calc(100% - 20px);
   padding: 10px;
@@ -24,11 +24,11 @@ input[type=text], input[type=number] {
   font-family: 'Roboto Mono', monospace;
   font-size: 1.2em;
   font-weight: bold;
-  color: red;
+  color: #7fe7cc;
 }
 
 input[type=text]:focus, input[type=number]:focus {
-  background-color: red;
+  background-color: #7fe7cc;
   color: white;
 }
 
@@ -37,8 +37,8 @@ input[type=number] {
 }
 
 button[type=submit] {
-  background-color: red;
-  border: 3px solid red;
+  background-color: #7fe7cc;
+  border: 3px solid #7fe7cc;
   padding: 40px 20px;
   font-family: 'Roboto Mono', monospace;
   color: white;
@@ -49,7 +49,7 @@ button[type=submit] {
 }
 
 button[type=submit]:hover, input[type=submit]:focus {
-  color: red;
+  color: #7fe7cc;
   background-color: white;
   cursor: pointer;
 }
@@ -61,7 +61,7 @@ button[type=submit]:hover, input[type=submit]:focus {
 
 body {
   padding: 6px 40px 40px 40px;
-  color: red;
+  color: #7fe7cc;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -72,14 +72,14 @@ body {
 }
 
 #mc td, #mc th {
-  border: 1px solid red;
+  border: 1px solid #7fe7cc;
   padding: 8px;
 }
 
 #mc th {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: red;
+  background-color: #7fe7cc;
   color: white;
   text-transform: uppercase;
 }
@@ -94,18 +94,18 @@ body {
 
 .new-person {
   color: white;
-  background-color: red;
+  background-color: #7fe7cc;
   padding: 10px;
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
   margin: 20px 0;
-  border: 3px solid red;
+  border: 3px solid #7fe7cc;
 }
 
 .new-person:hover {
   background-color: white;
-  color: red;
+  color: #7fe7cc;
 }
 
 ::selection {
@@ -119,7 +119,7 @@ body {
 
 .loeschen button {
   text-decoration: none;
-  color: red;
+  color: #7fe7cc;
   font-weight: bold;
   display: block;
   border: none;
@@ -130,25 +130,25 @@ body {
 }
 
 .loeschen:hover button {
-  background-color: red;
+  background-color: #7fe7cc;
   cursor: pointer;
   color: white;
 }
 body {
   padding: 40px;
-  color: red;
+  color: #7fe7cc;
   font-family: 'Roboto Mono', monospace;
   font-size: 0.8em;
 }
 form {
-  border: 3px solid red;
+  border: 3px solid #7fe7cc;
   padding: 20px;
   width: 60%;
   font-size: 1.2em;
 }
 input[type=text], input[type=number] {
   border: none;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #7fe7cc;
   display: block;
   width: calc(100% - 20px);
   padding: 10px;
@@ -156,18 +156,18 @@ input[type=text], input[type=number] {
   font-family: 'Roboto Mono', monospace;
   font-size: 1.2em;
   font-weight: bold;
-  color: red;
+  color: #7fe7cc;
 }
 input[type=text]:focus, input[type=number]:focus {
-  background-color: red;
+  background-color: #7fe7cc;
   color: white;
 }
 input[type=number] {
   width: 20%;
 }
 input[type=submit] {
-  background-color: red;
-  border: 3px solid red;
+  background-color: #7fe7cc;
+  border: 3px solid #7fe7cc;
   padding: 40px 20px;
   font-family: 'Roboto Mono', monospace;
   color: white;
@@ -177,7 +177,7 @@ input[type=submit] {
   outline: none;
 }
 input[type=submit]:hover, input[type=submit]:focus {
-  color: red;
+  color: #7fe7cc;
   background-color: white;
   cursor: pointer;
 }
