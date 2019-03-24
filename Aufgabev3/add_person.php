@@ -1,8 +1,8 @@
 <?php
-require_once('dbconnect.php');
-$db = dbconnect();
+require_once('dbconnect.php'); //import db verbingung
+$db = dbconnect(); //Verbinde db
 
-$name = $_POST['name'];
+$name = $_POST['name']; //Paramterter von vorheriger seite. bzw formular
 $vorname = $_POST['vorname'];
 $strasse = $_POST['strasse'];
 $nummer = $_POST['nummer'];
@@ -15,23 +15,11 @@ $sql = "INSERT INTO persons (name, vorname, strasse, nummer, PLZ)
           '$strasse',
           $nummer,
           $plz
-        );";
+        );"; //SQL Sting für die abfrage
 
-/** wenn das array direkt verwendet wird, müssen die verschiedenen Textteile mit einem '.' verbunden werden:
- * 
-  $sql = "INSERT INTO persons (name, vorname, strasse, nummer, PLZ) "
-  . "VALUES ("
-  . "'" . $_POST['name'] . "', "
-  . "'" . $_POST['vorname'] . "', "
-  . "'" . $_POST['strasse'] . "', "
-  . $_POST['nummer'] . ", "
-  . $_POST['PLZ']
-  . ");";
- * 
- */
 
-mysqli_query($db, $sql);
-mysqli_close($db);
-  
+mysqli_query($db, $sql); //Abfrage ausfühern
+mysqli_close($db); //trennt die Verbingung
+
 header('Location: index.php');
 ?>

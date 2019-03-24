@@ -135,7 +135,6 @@
   <br />
   <br />
   <br />
-  <p>Mit ❤ erstellt von Elia</p>
 
 </body>
 
