@@ -4,81 +4,16 @@
 <head>
   <?php require_once('dbconnect.php'); ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-
-  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
-
-    body {
-      padding: 6px 40px 40px 40px;
-      color: red;
-      font-family: 'Roboto Mono', monospace;
-    }
-    #rapper {
-      border-collapse: collapse;
-      width: 60%;
-      text-align: left;
-    }
-    #rapper td, #rapper th {
-      border: 1px solid red;
-      padding: 8px;
-    }
-    #rapper th {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      background-color: red;
-      color: white;
-      text-transform: uppercase;
-    }
-    #rapper tr:nth-child(even){background-color: #ffeaea;}
-    #rapper tr:hover {background-color: #ffc6c6;}
-    .new-person {
-      color: white;
-      background-color: red;
-      padding: 10px;
-      font-weight: bold;
-      text-decoration: none;
-      display: inline-block;
-      margin: 20px 0;
-      border: 3px solid red;
-    }
-    .new-person:hover {
-      background-color: white;
-      color: red;
-    }
-    ::selection {
-      background-color: blue;
-      color: white;
-    }
-    .loeschen {
-      text-align: center;
-    }
-    .loeschen button {
-      text-decoration: none;
-      color: red;
-      font-weight: bold;
-      display: block;
-      border: none;
-      background-color: rgba(255,255,255,0);
-      padding: 20px;
-      width: 100%;
-      height: 100%;
-    }
-    .loeschen:hover button {
-      background-color: red;
-      cursor: pointer;
-      color: white;
-    }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 
 <body>
-  <h1>"Sicke Rapper"</h1>
+  <h1>"Tierquäler"</h1>
   <a class="new-person" href='new_person_form.html'>Neue Person erfassen</a>
   <h2>Liste</h2>
   <form method="post">
-  <table id="rapper" border="1">
+  <table id="mc" border="1">
     <tr>
       <th>ID</th>
       <th>Vorname</th>

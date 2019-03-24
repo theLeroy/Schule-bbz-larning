@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="/css/Main.css">
-  
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 
 <body>
   <?php
-    require_once('dbconnect.php');
-    $db = dbconnect();
-    $id = $_POST['ID'];
-    $sql = "SELECT * FROM persons WHERE id=$id";
-    $result = mysqli_query($db, $sql);
-    $person = mysqli_fetch_array($result);
+    require_once('dbconnect.php'); //import verbinguns daten
+    $db = dbconnect(); //Verbinden
+    $id = $_POST['ID']; //Paramertr
+    $sql = "SELECT * FROM persons WHERE id=$id"; //SQL Sting
+    $result = mysqli_query($db, $sql); //query ausführen
+    $person = mysqli_fetch_array($result); //get result
 
     $name = $person['name'];
     $vorname = $person['vorname'];
